@@ -12,8 +12,6 @@ request.onreadystatechange = function () {
   if (this.readyState === 4) {
    var bsd=this.responseText;
    bsd=JSON.parse(bsd)
-   alert(bsd)
-alert(bsd.infected)
 document.getElementById("y").innerHTML="Yoluxan:" + bsd.infected
 document.getElementById("s").innerHTML="Sağalan:" + bsd.recovered
 document.getElementById("o").innerHTML="Ölən:" + bsd.deceased
