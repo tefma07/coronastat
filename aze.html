@@ -11,6 +11,7 @@ request.open('GET', 'https://api.apify.com/v2/key-value-stores/ThmCW2NVnrLa0tVp5
 request.onreadystatechange = function () {
   if (this.readyState === 4) {
    var bsd=this.responseText;
+   bsd=JSON.parse(bsd)
    alert(bsd)
 alert(bsd.infected)
 document.getElementById("y").innerHTML= bsd.infected
