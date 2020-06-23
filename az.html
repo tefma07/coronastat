@@ -1,0 +1,21 @@
+<h1>Azərbaycan</h1>
+<p id="y"></p>
+<p id="s"></p>
+<p id="o"></p>
+<p id="t"></p>
+<script>
+function gg(id,txt){
+document.getElementById(id).innerHTML=txt;}
+var request = new XMLHttpRequest();
+
+request.open('GET', 'https://api.apify.com/v2/key-value-stores/ThmCW2NVnrLa0tVp5/records/LATEST?disableRedirect=true');
+
+request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+   var bsd=this.responseText;
+  }
+};
+
+request.send();
+gg(y,bsd.infected)
+</script>
