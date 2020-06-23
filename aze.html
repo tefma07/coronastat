@@ -13,9 +13,9 @@ request.onreadystatechange = function () {
   if (this.readyState === 4) {
    var bsd=this.responseText;
    alert(bsd)
+document.getElementById("y").innerHTML= bsd.infected
   }
 };
 
 request.send();
-document.getElementById("y").innerHTML=bsd.infected
 </script>
